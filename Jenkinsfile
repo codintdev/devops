@@ -8,9 +8,7 @@ pipeline {
             steps {
                 echo "Building..."
                 sh '''
-                echo "Montando..."
-                apt install python3-xyz
-                pip install -r requeriments.txt
+                echo "Montando los requerimentos..."
                 '''
             }
         }
