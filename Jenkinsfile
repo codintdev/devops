@@ -8,7 +8,9 @@ pipeline {
             steps {
                 echo "Building..."
                 sh '''
-                echo "Montando"
+                echo "Montando..."
+                apt install python3-xyz
+                pip install -r requeriments.txt
                 '''
             }
         }
@@ -17,6 +19,7 @@ pipeline {
                 echo "Testing..."
                 sh '''
                 python3 prueba.py
+                python3 main.py
                 '''
             }
         }
@@ -24,7 +27,7 @@ pipeline {
             steps {
                 echo 'Deliver....'
                 sh '''
-                echo "Sin errores"
+                echo "Sin errores. Salida exitosa..."
                 '''
             }
         }
