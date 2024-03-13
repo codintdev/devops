@@ -6,17 +6,16 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                echo "Building.."
+                echo "Building..."
                 sh '''
-                pip install -r requirements.txt
+                echo "Montando"
                 '''
             }
         }
         stage('Test') {
             steps {
-                echo "Testing.."
+                echo "Testing..."
                 sh '''
-                python3 main.py
                 python3 prueba.py
                 '''
             }
