@@ -1,8 +1,5 @@
 pipeline {
     agent any
-    triggers {
-        pollSCM '* * * * *'
-    }
     stages {
         stage('Build') {
             steps {
@@ -17,7 +14,7 @@ pipeline {
                 echo "Testing..."
                 sh '''
                 python3 prueba.py
-                python3 main.py
+                ls -l
                 '''
             }
         }
