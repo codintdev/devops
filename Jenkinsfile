@@ -5,7 +5,7 @@ pipeline {
             steps {
                 echo "Building..."
                 sh '''
-                echo "Montando los requerimentos..."
+                echo "Montando lo necesario correctamente..."
                 '''
             }
         }
