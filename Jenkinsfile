@@ -7,6 +7,7 @@ pipeline {
                 sh '''
                 echo "Montando lo necesario correctamente..."
                 '''
+                checkout scm
             }
         }
         stage('Test') {
@@ -20,10 +21,11 @@ pipeline {
         }
         stage('Deliver') {
             steps {
-                echo 'Deliver....'
-                sh '''
-                echo "Sin errores. Salida exitosa..."
-                '''
+                echo "SonarQube"
+                def scannerHome = tool 'sonarqubeScaner';
+                withSonarQubeEnv() {
+                    sh "${scannerHome}/bin/sonar-scanner"
+                }
             }
         }
     }
