@@ -11,9 +11,6 @@ node {
   stage('Test') {
     steps {
       echo "Probando el repo"
-      sh '''
-      ls -la
-      '''
     }
   }
 }
