@@ -32,7 +32,9 @@ pipeline {
     }
     stage('Deploy') {
       steps {
-        sh 'echo "Deployment is succesfully"'
+        sh 'echo "TOdo montado correctamente"
+        ls -la
+        '
       }
     }
   }
