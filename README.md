@@ -1,7 +1,7 @@
-# Repositorio de ejemplo de un esquema devops
-En este proyecto vamos a simular como se maneja un esquema devops.
+# DevOps Methodology
+Hi, I'm going to show you a project I did using the DevOps development methodology. This project used Docker containers, we used Jenkins ideal tool to make the CI/CD, we made an application that generates secure random passwords, it is written in html, css and js. This whole project was a great learning experience when it comes to manage this methodology.
 
-## Utilizamos
+# We used
 - Docker
 - Jenkins
 - Git
@@ -10,8 +10,7 @@ En este proyecto vamos a simular como se maneja un esquema devops.
 - Zabbix
 - OWASP ZAP
 
-# Esquema
-![esquema](./assets/jenkins_pipeline.png)
+# Architecture
+![architecture](./assets/jenkins_pipeline.png)
 
-### Realizado
-20/03/2024
+
